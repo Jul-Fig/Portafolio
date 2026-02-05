@@ -16,7 +16,7 @@ const Cards = (props) => {
   );
 };
 
-const ROTATION_RANGE = 1.5;
+const ROTATION_RANGE = 8;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
 const TiltCard = (props) => {
@@ -26,8 +26,17 @@ const TiltCard = (props) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const xSpring = useSpring(x);
-  const ySpring = useSpring(y);
+  const xSpring = useSpring(x,{
+    stiffness:100,
+    damping:20,
+    mass:0.5
+  })
+
+  const ySpring = useSpring(y,{
+    stiffness:100,
+    damping:20,
+    mass:0.5
+  });
 
   const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
 

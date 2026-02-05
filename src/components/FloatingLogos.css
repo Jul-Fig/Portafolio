@@ -1,0 +1,40 @@
+/* FloatingLogos.css */
+
+.floating-logos-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-logo {
+  position: absolute;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+.floating-logo svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(128, 99, 159, 0.3));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+/* Efecto de hover si quisieras hacerlo interactivo más adelante */
+.floating-logo:hover {
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 20px rgba(128, 99, 159, 0.8));
+}
