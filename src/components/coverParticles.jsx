@@ -11,8 +11,8 @@ import {
   IoLogoAngular,
   IoLogoGithub,
 } from "react-icons/io5";
-import { BiLogoPostgresql, BiLogoTailwindCss, BiLogoJava, BiLogoSpringBoot } from "react-icons/bi";
-import { SiMysql, SiExpress, SiMongodb, SiDocker,BiLogoAws  } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoTailwindCss, BiLogoJava, BiLogoSpringBoot, BiLogoAws } from "react-icons/bi";
+import { SiMysql, SiExpress, SiMongodb, SiDocker  } from "react-icons/si";
 
 const CoverParticles = () => {
   const [init, setInit] = useState(false);
@@ -20,7 +20,7 @@ const CoverParticles = () => {
  
   const CONFIG = {
     
-    numberOfParticles: 45,
+    numberOfParticles: 50,
     
     
     sizeMin: 20,
@@ -46,7 +46,7 @@ const CoverParticles = () => {
     
     repulse: {
       enable: true,
-      distance: 110,
+      distance: 120,
       duration: 0.6,
       speed: 0.4,
       factor: 80,
@@ -54,28 +54,26 @@ const CoverParticles = () => {
 
     },
     
-    // Efecto Grab (líneas se conectan al cursor)
+    
     grab: {
       enable: true,
       distance: 180,
       opacity: 2,
     },
     
-    // Efecto Push (agregar partículas al hacer clic)
+    
     push: {
       enable: true,
       quantity: 1,
     },
     
-    // Velocidad de rotación de las partículas
+    
     rotationSpeed: 2,
     
-    // FPS límite (menor = mejor rendimiento)
+    
     fpsLimit: 120,
   };
-  // ============================================================
-
-  // Iconos de react-icons con sus colores
+  
   const icons = [
     { Icon: IoLogoJavascript, color: "#80639F" },
     { Icon: IoLogoReact, color: "#80639F" },
@@ -95,7 +93,7 @@ const CoverParticles = () => {
     { Icon: BiLogoAws, color: "#80639F" },
   ];
 
-  // Convertir react-icons a SVG strings para tsparticles
+  
   const iconImages = icons.map(({ Icon, color }) => {
     const iconElement = <Icon style={{ color }} />;
     const svgString = ReactDOMServer.renderToStaticMarkup(iconElement);
@@ -119,7 +117,7 @@ const CoverParticles = () => {
     console.log("Particles loaded:", container);
   };
 
-  // Configurar modos de interacción
+ 
   const interactionModes = {};
   
   if (CONFIG.repulse.enable) {
