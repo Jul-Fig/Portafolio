@@ -77,7 +77,7 @@ const SuccessState = ({ onReset }) => (
       ¡Mensaje enviado!
     </h3>
     <p style={{ color: "#b48fe0" }} className="text-sm leading-relaxed">
-      Gracias por escribirme. Te responderé a la brevedad.
+      Gracias por escribirme. Te responderé lo mas rapido posible.
     </p>
     <button onClick={onReset} className="mt-4 px-6 py-2 rounded-full text-sm font-medium"
       style={{ background: "rgba(180,143,224,0.15)", color: "#b48fe0", border: "1px solid rgba(180,143,224,0.3)" }}>
@@ -96,7 +96,7 @@ const fieldStyle = {
 const ContactForm = ({ form, status, error, onChange, onSubmit }) => (
   <form onSubmit={onSubmit} className="flex flex-col gap-4 sm:gap-5">
     <p className="text-sm leading-relaxed" style={{ color: "#9b8aad" }}>
-      ¿Tienes un proyecto en mente o simplemente quieres saludar? Escríbeme.
+      ¿Tienes un proyecto en mente? Escríbeme.
     </p>
     {[
       { name: "name",  label: "Nombre", type: "text",  placeholder: "Tu nombre"    },
