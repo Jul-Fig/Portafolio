@@ -12,8 +12,8 @@ const itemVariants = {
 };
 
 const STATS = [
-  { value: "+10", label: "Proyectos"  },
-  { value: "2+",  label: "Años exp."  },
+  /*{ value: "+10", label: "Proyectos"  },*/
+  { value: "1+",  label: "Años exp."  },
   { value: "100%",label: "Dedicación" },
 ];
 
@@ -65,16 +65,14 @@ const AboutSection = () => (
             style={{ color: "#c4b4d9", fontFamily: "'DM Sans',sans-serif", fontWeight: 300 }}
           >
             Soy{" "}
-            <strong style={{ color: "#f0eaff", fontWeight: 500 }}>Julian Figueredo</strong>,
-            desarrollador Full Stack apasionado por construir experiencias digitales que combinan
-            funcionalidad y buen diseño.
+            <strong style={{ color: "#f0eaff", fontWeight: 500 }}>Julian</strong>,
+            desarrollador enfocado en construir aplicaciones web empresariales y APIs que resuelvan problemas reales.
           </p>
           <p
             className="text-base sm:text-lg leading-relaxed"
             style={{ color: "#c4b4d9", fontFamily: "'DM Sans',sans-serif", fontWeight: 300 }}
           >
-            Me enfoco en escribir código limpio y escalable, siempre buscando las mejores
-            soluciones para cada problema.
+            Trabajo en backend y frontend utilizando tecnologías como Java / Spring Boot, Node.js / Express, React, Angular y bases de datos SQL y MongoDB, desarrollando desde la arquitectura del servidor hasta la experiencia del usuario.
           </p>
 
           {/* Stats */}

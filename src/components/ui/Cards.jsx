@@ -42,7 +42,7 @@ const Cards = ({ title, description, img, link, github, tags = [] }) => {
       className="w-full sm:w-[340px] flex flex-col rounded-2xl overflow-hidden"
     >
 
-      {/* ── Imagen ─────────────────────────────── */}
+      {/* Imagen  */}
       <div className="relative w-full h-48 overflow-hidden flex-shrink-0 group">
         <img
           src={img}
@@ -76,7 +76,7 @@ const Cards = ({ title, description, img, link, github, tags = [] }) => {
         )}
       </div>
 
-      {/* ── Texto ──────────────────────────────── */}
+      {/* Texto  */}
       <div className="flex flex-col flex-1 p-5 gap-3">
 
         <h3
@@ -96,7 +96,7 @@ const Cards = ({ title, description, img, link, github, tags = [] }) => {
         {/* Divisor */}
         <div className="w-full h-px" style={{ background: "rgba(180,143,224,0.12)" }} />
 
-        {/* ── Botones ────────────────────────────── */}
+        {/* Botones */}
         <div className="flex items-center gap-2.5">
 
           <a
