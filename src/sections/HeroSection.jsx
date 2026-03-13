@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Social from "../components/ui/Social";
 import { config } from "../config/env";
-import Julian from "../assets/Julian_Developer.jpeg";
+import Julian from "../../public/assets/Julian_Developer.jpeg";
 
 const HeroSection = () => (
   <section

@@ -7,6 +7,6 @@ export const config = {
   },
   site: {
     title: "Julian Figueredo — Full Stack Developer",
-    cvPath: "/assets/data/Julian_Developer_CV.pdf",
+    cvPath: "../../public/assets/data/CV_Julian_Lozada_Developer.pdf",
   },
 };

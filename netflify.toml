@@ -3,6 +3,11 @@
   publish = "dist"
   functions = "netlify/functions"
 
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
 # Redirige todas las rutas al index.html para que React Router funcione
 [[redirects]]
   from = "/*"

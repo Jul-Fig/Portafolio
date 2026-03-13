@@ -4,7 +4,7 @@ import { IoHomeSharp, IoPersonSharp, IoMenuSharp, IoCloseSharp } from "react-ico
 import { FaFileCode } from "react-icons/fa";
 
 const NAV_ITEMS = [
-  { label: "INICIO",    href: "#inicio",    Icon: IoHomeSharp   },
+  /*{ label: "INICIO",    href: "#inicio",    Icon: IoHomeSharp   },*/
   { label: "PROYECTOS", href: "#proyectos", Icon: FaFileCode    },
   { label: "SOBRE MÍ",  href: "#sobre-mi",  Icon: IoPersonSharp },
 ];
