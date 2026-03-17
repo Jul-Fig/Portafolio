@@ -9,7 +9,7 @@ export const PROJECTS = [
     id: 1,
     title: "TravelGo",
     description: "Sistema web full stack que conecta frontend y backend mediante APIs REST, implementando autenticación con JWT, manejo de base de datos relacional y lógica de negocio transaccional, construido con arquitectura en capas para soportar procesos reales, interacción eficiente entre servicios y experiencia de usuario.",
-    img: "/assets/projects/travelgo.png",
+    img: "/assets/projects/travelgoPortafolio.png",
     link: "https://github.com/Jul-Fig",
     github: "https://github.com/Jul-Fig/TravelGo",
     tags: ["React", "Spring Boot", "MySQL", "JWT", "MVC"],
