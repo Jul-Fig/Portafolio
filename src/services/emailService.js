@@ -1,5 +1,4 @@
-// src/services/emailService.js
-// Llama a tu Netlify Function — sin API keys en el frontend.
+
 
 /**
  * @param {{ name: string, email: string, message: string }} formData
@@ -7,7 +6,7 @@
  */
 export async function sendContactEmail({ name, email, message }) {
   try {
-    const res = await fetch("/api/contact", {
+    const res = await fetch("https://jul-fig-dev.online/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message }),
