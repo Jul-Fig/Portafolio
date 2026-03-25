@@ -1,7 +1,7 @@
 Options -MultiViews
 RewriteEngine On
 
-# MIME types correctos
+# Forzar tipos MIME (opcional pero ok)
 AddType application/javascript .js .mjs
 AddType text/css .css
 AddType image/svg+xml .svg
@@ -9,7 +9,10 @@ AddType application/json .json
 AddType font/woff2 .woff2
 AddType font/woff .woff
 
-# React Router — redirige todo al index.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
+# 🚨 IMPORTANTE: SI el archivo existe, NO redirigir
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback (React Router)
+RewriteRule ^ index.html [L]
