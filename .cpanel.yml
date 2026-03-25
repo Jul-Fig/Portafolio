@@ -1,5 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/aiatlbctsu/public_html/
-    - /bin/cp -R dist/* $DEPLOYPATH
+    - export DEPLOY_PATH=/home/aiatlbctsu/jul-fig-dev.online/
+    - /usr/bin/git/ -C $DEPLOY_PATH reset --hard
+    - /usr/bin/git/ -C $DEPLOY_PATH pull origin main
+    - echo "Depliegue completo en $(date)">> $DEPLOY_PATH/deploy.log
