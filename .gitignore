@@ -59,7 +59,7 @@ sketch
 .history
 
 # Compiled output
-/dist
+#/dist
 /tmp
 /out-tsc
 /bazel-out
