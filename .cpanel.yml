@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/aiatlbctsu/public_html/
     - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
